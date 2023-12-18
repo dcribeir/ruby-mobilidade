@@ -1,0 +1,131 @@
+[
+  {
+    "uri": "features/specs/compra_produto.feature",
+    "id": "compra-de-produtos",
+    "keyword": "Funcionalidade",
+    "name": "Compra de produtos",
+    "description": "",
+    "line": 4,
+    "tags": [
+      {
+        "name": "@compraproduto",
+        "line": 3
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 6,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43100
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28300
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "stale element reference: stale element not found\n  (Session info: chrome=120.0.6099.72) (Selenium::WebDriver::Error::StaleElementReferenceError)\n\tGetHandleVerifier [0x00007FF63A634D02+56194]\n\t(No symbol) [0x00007FF63A5A04B2]\n\t(No symbol) [0x00007FF63A4476AA]\n\t(No symbol) [0x00007FF63A4579BF]\n\t(No symbol) [0x00007FF63A44DB89]\n\t(No symbol) [0x00007FF63A44BF22]\n\t(No symbol) [0x00007FF63A44F38F]\n\t(No symbol) [0x00007FF63A44F480]\n\t(No symbol) [0x00007FF63A4933D9]\n\t(No symbol) [0x00007FF63A4867D6]\n\t(No symbol) [0x00007FF63A4B5E7A]\n\t(No symbol) [0x00007FF63A486226]\n\t(No symbol) [0x00007FF63A4B6320]\n\t(No symbol) [0x00007FF63A4D2786]\n\t(No symbol) [0x00007FF63A4B5C23]\n\t(No symbol) [0x00007FF63A484A45]\n\t(No symbol) [0x00007FF63A485AD4]\n\tGetHandleVerifier [0x00007FF63A9AD5BB+3695675]\n\tGetHandleVerifier [0x00007FF63AA06197+4059159]\n\tGetHandleVerifier [0x00007FF63A9FDF63+4025827]\n\tGetHandleVerifier [0x00007FF63A6CF029+687785]\n\t(No symbol) [0x00007FF63A5AB508]\n\t(No symbol) [0x00007FF63A5A7564]\n\t(No symbol) [0x00007FF63A5A76E9]\n\t(No symbol) [0x00007FF63A598094]\n\tBaseThreadInitThunk [0x00007FFA24847344+20]\n\tRtlUserThreadStart [0x00007FFA267026B1+33]\n./features/support/hooks.rb:18:in `Before'",
+              "duration": 69418318800
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu esteja no site CB",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/compra_produto.rb:1"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "compra-de-produtos;realizar-a-compra-de-um-produto-p1-cdc",
+        "keyword": "Cenário",
+        "name": "realizar a compra de um produto P1 CDC",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@compraproduto",
+            "line": 3
+          },
+          {
+            "name": "@teste",
+            "line": 9
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "selecionar o produto P1 desejado e finalizar a compra com CDC",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/compra_produto.rb:7"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a compra será concluída com a forma de pagamento CDC produto P1",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/compra_produto.rb:12"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:23"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `attach' for #<Object+PageObjects+Helper+Capybara::RSpecMatchers+Capybara::DSLRSpecProxyInstaller+Capybara::DSL+Cucumber::Glue::ProtoWorld+#<Module:0x000001f12c342d98>+PP::ObjectMixin+RSpec::Matchers+JSON::Ext::Generator::GeneratorMethods::Object+Kernel+:0x1c84>\nDid you mean?  attach_file (NoMethodError)\n./features/support/helper.rb:32:in `tirar_foto'\n./features/support/hooks.rb:27:in `After'",
+              "duration": 165872900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 262048600
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

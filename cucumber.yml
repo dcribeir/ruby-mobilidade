@@ -1,0 +1,15 @@
+default: --color --profile pretty -p hom -p chrome -p html -f json -o cucumber.json
+
+pretty: --format pretty
+progress: --format progress
+des: AMBIENTE=des
+hom: AMBIENTE=hom
+prod: AMBIENTE=prod
+chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless
+firefox: BROWSER=firefox
+safari: BROWSER=safari
+ie: BROWSER=ie
+edge: BROWSER=edge
+
+html: --format html --out=reports/relatorio.html
